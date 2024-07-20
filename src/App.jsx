@@ -57,9 +57,7 @@ const App = () => {
       }}
     >
       <div className="h-screen w-screen flex justify-center items-center gap-4 flex-col">
-        <div className="text-2xl">
-          نمونه پروژه تشخیص ویروس کرونا - علی منتظریون
-        </div>
+        <div className="text-2xl">پروژه تشخیص ویروس کرونا - علی منتظریون</div>
         <div className="flex flex-row gap-2">
           <Upload
             fileList={fileList}
