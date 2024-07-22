@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ConfigProvider, Upload, Button, message, Image } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './index.css'; // Ensure this contains your custom font CSS
 
 const App = () => {
@@ -43,7 +44,7 @@ const App = () => {
       message.success('File uploaded successfully.');
       console.log(response.data);
     } catch (error) {
-      message.error('Upload failed.');
+      message.error('Docker Problem ...');
       console.error(error);
     }
   };
@@ -58,6 +59,7 @@ const App = () => {
     >
       <div className="h-screen w-screen flex justify-center items-center gap-4 flex-col">
         <div className="text-2xl"> تشخیص ویروس کرونا - علی منتظریون</div>
+        <div className="text-2xl mb-6">دانشگاه جامع انقلاب اسلامی</div>
         <div className="flex flex-row gap-2">
           <Upload
             fileList={fileList}
